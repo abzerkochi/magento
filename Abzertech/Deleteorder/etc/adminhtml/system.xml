@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="abzertech" sortOrder="400" translate="label">
+            <label>Abzer Extensions</label>
+        </tab>
+        <section id="abzer_delete_order" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="1" translate="label">
+            <label>Delete Order</label>
+            <tab>abzertech</tab>
+            <resource>Abzertech_Deleteorder::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>   
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>abzer/deleteorder/active</config_path>
+                    <comment>Select Yes to enable this module</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
