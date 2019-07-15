@@ -10,7 +10,7 @@ Paste it under <i><magento_project_path>/app/code/</i> and run the following com
 Method 2: Install via composer [Recommend]
 Run the following commands Magento root folder
 
-<code>composer require abzertech/module-delete-order</code>
+<code>composer require abzertech/delete-order</code>
 
 <code>php bin/magento setup:upgrade</code>
 
